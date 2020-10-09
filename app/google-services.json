@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "256998904576",
+    "firebase_url": "https://bosconet-e5d98.firebaseio.com",
+    "project_id": "bosconet-e5d98",
+    "storage_bucket": "bosconet-e5d98.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256998904576:android:ac88e13c256c323e",
+        "android_client_info": {
+          "package_name": "com.integro.bosconet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "256998904576-9nvn12q8p2qqv6s8v2h2gbiec8lb7tfo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgRm9j37miAhQJHh3PQEb5IKKsN7nNPUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "256998904576-9nvn12q8p2qqv6s8v2h2gbiec8lb7tfo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

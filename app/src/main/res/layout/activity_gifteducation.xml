@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".GiftEducationActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <com.integro.bosconet.customTextView.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="GIFT EDUCATION"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp"
+                    app:fonts="@string/font_Title" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300sp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gift" />
+
+                <com.integro.bosconet.customTextView.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="30dp"
+                    android:paddingRight="10sp"
+                    android:paddingBottom="10sp"
+                    android:text="@string/giftEducation"
+                    android:textColor="@color/colorBlack"
+                    app:fonts="@string/font_Title" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="325sp" />
+
+                <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="25sp"
+                    android:layout_marginRight="25sp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    card_view:cardElevation="5dp">
+
+                    <com.integro.bosconet.customTextView.CustomTextView
+                        android:id="@+id/tvDonate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:text="DONATE"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20dp"
+                        app:fonts="@string/font_Heading" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

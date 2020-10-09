@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".AboutUsActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.integro.bosconet.customTextView.CustomTextView
+                android:id="@+id/tvWhoWeAre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:drawableRight="@drawable/ic_up"
+                android:gravity="start|center"
+                android:minLines="3"
+                android:paddingLeft="10sp"
+                android:paddingRight="10dp"
+                android:text="Who We Are"
+                android:textColor="@color/colorWhite"
+                app:fonts="@string/font_Title" />
+
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/elWhoWeAre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:background="@color/colorWhite"
+                android:padding="10dp"
+                app:ael_duration="600"
+                app:ael_expanded="true"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="530dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200sp"
+                        android:layout_marginBottom="5sp"
+                        android:src="@drawable/about_us" />
+
+                    <com.integro.bosconet.customTextView.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/whoWeAre"
+                        android:textColor="@color/colorBlack"
+                        app:fonts="@string/font_Title" />
+                </LinearLayout>
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <com.integro.bosconet.customTextView.CustomTextView
+                android:id="@+id/tvOurVision"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:drawableEnd="@drawable/ic_down"
+                android:drawableRight="@drawable/ic_down"
+                android:gravity="start|center"
+                android:minLines="3"
+                android:paddingLeft="10sp"
+                android:paddingRight="10dp"
+                android:text="Our Vision"
+                android:textColor="@color/colorWhite"
+                app:fonts="@string/font_Title"
+                tools:ignore="OnClick" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/elOurVision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:background="@color/colorWhite"
+                android:padding="10dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150sp"
+                        android:layout_marginBottom="5sp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/our_visition" />
+
+                    <com.integro.bosconet.customTextView.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ourVision"
+                        android:textColor="@color/colorBlack"
+                        app:fonts="@string/font_Title" />
+                </LinearLayout>
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <com.integro.bosconet.customTextView.CustomTextView
+                android:id="@+id/tvOurMission"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:background="@color/colorPrimary"
+                android:drawableEnd="@drawable/ic_down"
+                android:drawableRight="@drawable/ic_down"
+                android:gravity="start|center"
+                android:minLines="3"
+                android:paddingLeft="10sp"
+                android:paddingRight="10dp"
+                android:text="Our Mission"
+                android:textColor="@color/colorWhite"
+                app:fonts="@string/font_Title"
+                tools:ignore="OnClick" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/elOurMission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:padding="10dp"
+                app:ael_duration="600"
+                app:ael_expanded="false"
+                app:ael_interpolator="accelerate"
+                app:ael_orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="650dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="350sp"
+                        android:layout_marginBottom="5sp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/our_mission" />
+
+                    <com.integro.bosconet.customTextView.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ourMission1"
+                        android:textColor="@color/colorBlack"
+                        app:fonts="@string/font_Title" />
+                </LinearLayout>
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

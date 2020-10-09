@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            tools:ignore="ObsoleteLayoutParam">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <View
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <com.github.demono.AutoScrollViewPager
+                    android:id="@+id/vpCoverPhotos"
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    app:slideDirection="right"
+                    app:slideDuration="3000"
+                    app:slideInterval="3000"
+                    app:stopWhenTouch="true" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img19715" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/im2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="0.9" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_margin="5sp"
+            android:layout_weight="0.4"
+            app:cardElevation="3sp">
+
+                <ImageView
+                    android:id="@+id/IvDonate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:src="@drawable/bannerapp"
+                    android:text="D O N A T E"
+                    android:scaleType="centerCrop"
+                    android:textColor="@color/colorRed"
+                    android:textSize="25dp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <com.github.demono.AutoScrollViewPager
+            android:id="@+id/vpNews"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="0.6"
+            android:scaleType="centerCrop"
+            app:slideDirection="right"
+            app:slideDuration="3000"
+            app:slideInterval="3000"
+            app:stopWhenTouch="true" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="0.1"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="0.8" />
+
+            <com.integro.bosconet.customTextView.CustomTextView
+                android:id="@+id/giftEducation"
+                android:layout_width="200sp"
+                android:layout_height="0sp"
+                android:layout_weight="0.7"
+                android:gravity="center|start"
+                android:paddingLeft="15dp"
+                android:paddingBottom="5sp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp"
+                app:fonts="@string/font_Title"
+                tools:ignore="MissingPrefix" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="0.45" />
+
+            <com.integro.bosconet.customTextView.CustomTextView
+                android:id="@+id/skill"
+                android:layout_width="200sp"
+                android:layout_height="0sp"
+                android:layout_weight="0.75"
+                android:gravity="center|start"
+                android:paddingLeft="15dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp"
+                app:fonts="@string/font_Title"
+                tools:ignore="MissingPrefix" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="0.3" />
+
+            <com.integro.bosconet.customTextView.CustomTextView
+                android:id="@+id/careForEarth"
+                android:layout_width="250sp"
+                android:layout_height="0sp"
+                android:layout_weight="0.75"
+                android:gravity="center|start"
+                android:paddingLeft="15dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp"
+                app:fonts="@string/font_Title"
+                tools:ignore="HardcodedText,MissingPrefix,RtlSymmetry" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

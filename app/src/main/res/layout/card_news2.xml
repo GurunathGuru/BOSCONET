@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        app:contentPaddingBottom="5sp"
+        app:contentPaddingRight="5sp"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardElevation="5sp">
+
+        <LinearLayout
+            android:id="@+id/llNews"
+            android:layout_width="match_parent"
+            android:layout_height="160sp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/ivImage"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:background="@color/colorWhite"
+                android:padding="5dp"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <com.integro.bosconet.customTextView.CustomTextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="0.5"
+                    android:background="@color/colorWhite"
+                    android:gravity="start|top"
+                    android:maxLines="2"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    app:fonts="@string/font_Description"
+                    tools:ignore="MissingPrefix" />
+
+                <com.integro.bosconet.customTextView.CustomTextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="1.5"
+                    android:background="@color/colorGray"
+                    android:gravity="start|top"
+                    android:maxLines="4"
+                    android:padding="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"
+                    app:fonts="@string/font_Title"
+                    tools:ignore="MissingPrefix" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

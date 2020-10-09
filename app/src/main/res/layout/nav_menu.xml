@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="2.5dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center|start"
+            android:scaleType="centerCrop"
+            android:src="@drawable/donbosco" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2.5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="2.5dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            app:cardBackgroundColor="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.45"
+                    android:background="#C9769BA2"
+                    android:clickable="true"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:src="@drawable/ourteam" />
+
+                <com.integro.bosconet.customTextView.CustomTextView
+                    android:id="@+id/tvAboutUs"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/text_link_selector_bg"
+                    android:clickable="true"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:shadowColor="#7000"
+                    android:shadowDx="6"
+                    android:shadowDy="6"
+                    android:shadowRadius="8"
+                    android:text="About us"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12dp"
+                    app:fonts="@string/font_Title" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            app:cardBackgroundColor="@color/colorYellow">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.45"
+                    android:background="#5E805A5A"
+                    android:clickable="true"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:src="@drawable/newsletter2" />
+
+                <com.integro.bosconet.customTextView.CustomTextView
+                    android:id="@+id/tvNewsLetter"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/text_link_selector_bg"
+                    android:clickable="true"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:shadowColor="#7000"
+                    android:shadowDx="6"
+                    android:shadowDy="6"
+                    android:shadowRadius="8"
+                    android:text="Newsletter"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12dp"
+                    app:fonts="@string/font_Title" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            app:cardBackgroundColor="@color/colorLightPink">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.45"
+                    android:background="#9A1E5E61"
+                    android:clickable="true"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/contact_us" />
+
+                <com.integro.bosconet.customTextView.CustomTextView
+                    android:id="@+id/tvContactUs"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.6"
+                    android:background="@drawable/text_link_selector_bg"
+                    android:clickable="true"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:shadowColor="#7000"
+                    android:shadowDx="6"
+                    android:shadowDy="6"
+                    android:shadowRadius="8"
+                    android:text="Contact us"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12dp"
+                    app:fonts="@string/font_Title" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2.5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="0.7"
+            android:weightSum="4">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/dialog_holo_light_frame">
+
+                <ImageView
+                    android:id="@+id/ivFb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_link_selector_bg"
+                    android:clickable="true"
+                    android:gravity="center|start"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fb1" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/dialog_holo_light_frame">
+
+                <ImageView
+                    android:id="@+id/ivTwitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_link_selector_bg"
+                    android:clickable="true"
+                    android:gravity="center|start"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/tw1" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/dialog_holo_light_frame">
+
+                <ImageView
+                    android:id="@+id/ivInsta"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_link_selector_bg"
+                    android:clickable="true"
+                    android:gravity="center|start"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ins1" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/dialog_holo_light_frame">
+
+                <ImageView
+                    android:id="@+id/ivYoutube"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_link_selector_bg"
+                    android:clickable="true"
+                    android:gravity="center|start"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/you1" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1.3"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                app:cardBackgroundColor="@color/colorPrimary">
+
+                <com.integro.bosconet.customTextView.CustomTextView
+                    android:id="@+id/tvSuccessStories"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/text_link_selector_bg"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:shadowColor="#7000"
+                    android:shadowDx="6"
+                    android:shadowDy="6"
+                    android:shadowRadius="8"
+                    android:text="Success Stories"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12dp"
+                    app:fonts="@string/font_Title" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/dialog_holo_light_frame"
+                    app:cardBackgroundColor="@color/colorWhite">
+
+                    <com.integro.bosconet.customTextView.CustomTextView
+                        android:id="@+id/tvPhotoGallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/text_link_selector_bg"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:shadowColor="#7000"
+                        android:shadowDx="6"
+                        android:shadowDy="6"
+                        android:shadowRadius="8"
+                        android:text="Photos"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12dp"
+                        app:fonts="@string/font_Title" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/dialog_holo_light_frame"
+                    app:cardBackgroundColor="@color/colorWhite">
+
+                    <com.integro.bosconet.customTextView.CustomTextView
+                        android:id="@+id/tvVideoGallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/text_link_selector_bg"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:shadowColor="#7000"
+                        android:shadowDx="6"
+                        android:shadowDy="6"
+                        android:shadowRadius="8"
+                        android:text="Videos"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12dp"
+                        app:fonts="@string/font_Title" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context=".fragments.NewsFragment">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="2"
+        android:scaleType="fitStart"
+        android:src="@drawable/bag" />
+
+    <com.integro.bosconet.customTextView.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.6"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="OUR NETWORK"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp"
+        app:fonts="@string/font_Heading"
+        tools:ignore="MissingPrefix" />
+
+    <com.integro.bosconet.customTextView.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.6"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="The Don Bosco Network develops resources to enable marginalised people to access opportunities to live in dignity."
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp"
+        app:fonts="@string/font_Title"
+        tools:ignore="MissingPrefix" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.4"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <com.integro.bosconet.customTextView.CustomTextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="29"
+            android:textColor="@color/colorBlack"
+            android:textSize="30sp"
+            app:fonts="@string/font_Heading"
+            tools:ignore="MissingPrefix" />
+
+        <View
+            android:layout_width="1sp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:background="@color/colorPrimary" />
+
+        <com.integro.bosconet.customTextView.CustomTextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="354"
+            android:textColor="@color/colorBlack"
+            android:textSize="30sp"
+            app:fonts="@string/font_Heading"
+            tools:ignore="MissingPrefix" />
+
+        <View
+            android:layout_width="1sp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.integro.bosconet.customTextView.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="10 *"
+                android:textColor="@color/colorBlack"
+                android:textSize="30sp"
+                app:fonts="@string/font_Heading"
+                tools:ignore="MissingPrefix" />
+
+            <com.integro.bosconet.customTextView.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center|top"
+                android:paddingTop="15sp"
+                android:text="lakh"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                app:fonts="@string/font_Heading"
+                tools:ignore="MissingPrefix" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.4"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <com.integro.bosconet.customTextView.CustomTextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|top"
+            android:padding="5dp"
+            android:text="STATES"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            app:fonts="@string/font_Heading"
+            tools:ignore="MissingPrefix" />
+
+        <com.integro.bosconet.customTextView.CustomTextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="NGOs"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            app:fonts="@string/font_Heading"
+            tools:ignore="MissingPrefix" />
+
+        <com.integro.bosconet.customTextView.CustomTextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="BENEFICIARIES"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            app:fonts="@string/font_Heading"
+            tools:ignore="MissingPrefix" />
+    </LinearLayout>
+
+</LinearLayout>

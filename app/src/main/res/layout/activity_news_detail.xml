@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".NewsDetailActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
+
+                <com.github.demono.AutoScrollViewPager
+                    android:id="@+id/autoScrollViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    app:slideDirection="right"
+                    app:slideDuration="3000"
+                    app:slideInterval="3000"
+                    app:stopWhenTouch="true" />
+
+                <com.integro.bosconet.customTextView.CustomTextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|end"
+                    android:paddingRight="25dp"
+                    android:text="Title"
+                    android:textColor="@color/colorRed"
+                    app:fonts="@string/font_Title" />
+
+                <com.integro.bosconet.customTextView.CustomTextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Title"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    app:fonts="@string/font_Title" />
+
+                <com.integro.bosconet.customTextView.CustomTextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:padding="10dp"
+                    android:text="Title"
+                    android:textColor="@color/colorBlack"
+                    app:fonts="@string/font_Title" />
+
+                <com.integro.bosconet.customTextView.CustomTextView
+                    android:id="@+id/tvShare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="SHARE"
+                    android:textColor="@color/colorWhite"
+                    app:fonts="@string/font_Title" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
