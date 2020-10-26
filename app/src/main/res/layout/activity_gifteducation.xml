@@ -37,7 +37,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="300sp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/gift" />
+                    app:srcCompat="@drawable/gift" />
 
                 <com.integro.bosconet.customTextView.CustomTextView
                     android:layout_width="match_parent"
@@ -65,7 +65,7 @@
                     android:layout_height="50sp"
                     android:layout_marginLeft="25sp"
                     android:layout_marginRight="25sp"
-                    android:foreground="?android:attr/selectableItemBackground"
+                    android:foreground="?attr/selectableItemBackground"
                     card_view:cardElevation="5dp">
 
                     <com.integro.bosconet.customTextView.CustomTextView

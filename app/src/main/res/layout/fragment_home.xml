@@ -44,7 +44,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/img19715" />
+                app:srcCompat="@drawable/img19715" />
         </RelativeLayout>
 
         <ImageView
@@ -52,7 +52,7 @@
             android:layout_height="0sp"
             android:layout_weight="1"
             android:scaleType="centerCrop"
-            android:src="@drawable/im2" />
+            app:srcCompat="@drawable/im2" />
     </LinearLayout>
 
     <LinearLayout
@@ -78,12 +78,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:src="@drawable/bannerapp"
+                    app:srcCompat="@drawable/bannerapp"
                     android:text="D O N A T E"
                     android:scaleType="centerCrop"
                     android:textColor="@color/colorRed"
                     android:textSize="25dp" />
-
 
         </androidx.cardview.widget.CardView>
 

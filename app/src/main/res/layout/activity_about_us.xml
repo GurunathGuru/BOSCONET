@@ -53,7 +53,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="200sp"
                         android:layout_marginBottom="5sp"
-                        android:src="@drawable/about_us" />
+                        app:srcCompat="@drawable/about_us" />
 
                     <com.integro.bosconet.customTextView.CustomTextView
                         android:layout_width="match_parent"
@@ -103,7 +103,7 @@
                         android:layout_height="150sp"
                         android:layout_marginBottom="5sp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/our_visition" />
+                        app:srcCompat="@drawable/our_visition" />
 
                     <com.integro.bosconet.customTextView.CustomTextView
                         android:layout_width="match_parent"
@@ -153,7 +153,7 @@
                         android:layout_height="350sp"
                         android:layout_marginBottom="5sp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/our_mission" />
+                        app:srcCompat="@drawable/our_mission" />
 
                     <com.integro.bosconet.customTextView.CustomTextView
                         android:layout_width="wrap_content"
